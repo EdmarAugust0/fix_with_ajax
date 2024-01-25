@@ -20,4 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             reposElement.innerText = json.public_repos; 
             linkElement.href = json.html_url; 
         })
+        .catch(function(erro) {
+            alert("Ocorreu um erro ao buscar o endereço, tente novamente mais tarde.")
+        })
 })
